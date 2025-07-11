@@ -1,5 +1,5 @@
-import flatpickr from 'flatpicker';
-import 'flatpickr/platpickr.min.css';
+import flatpickr from 'flatpickr';
+import 'flatpickr/dist/flatpickr.min.css';
 
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
@@ -68,9 +68,8 @@ const option = {
       btnStart.disabled = true;
       iziToast.error({
         message: 'Please choose a date in the future',
-        position: 'top-right',
+        position: 'topRight',
         color: 'red',
-        messageColor: '#fff',
       });
     } else {
       btnStart.disabled = false;

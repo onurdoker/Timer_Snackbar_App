@@ -25,7 +25,7 @@ body {
   letter-spacing: 0.05em;
 }
 
-#datetimer-picker {
+#datetime-picker {
   width: 300px;
   height: 45px;
   flex-shrink: 0;
@@ -34,7 +34,7 @@ body {
   margin-top: 40px;
 }
 
-#datetimer-picker:hover {
+#datetime-picker:hover {
   border-color: #000;
 }
 
