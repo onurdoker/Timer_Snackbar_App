@@ -70,7 +70,7 @@ const option = {
         message: 'Please choose a date in the future',
         position: 'top-right',
         color: 'red',
-        messageColor: #fff,
+        messageColor: '#fff',
       });
     } else {
       btnStart.disabled = false;
