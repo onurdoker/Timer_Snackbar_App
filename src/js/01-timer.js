@@ -4,7 +4,7 @@ import 'flatpickr/dist/flatpickr.min.css';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
-const dateInput = document.querySelector('#datetime-input');
+const dateInput = document.querySelector('#datetime-picker');
 const btnStart = document.querySelector('[data-start]');
 
 const dataDays = document.querySelector('[data-days]');
@@ -57,11 +57,11 @@ function convertMs(ms) {
 
 const option = {
   enableTime: true,
-  time_24hour: true,
+  time_24hr: true,
   defaultDate: new Date(),
   minuteIncrement: 1,
   onClose(selectedDates) {
-    userSelected = selectedDates(0);
+    userSelected = selectedDates[0];
     const currentDate = Date.now();
 
     if (userSelected <= currentDate) {
@@ -69,7 +69,6 @@ const option = {
       iziToast.error({
         message: 'Please choose a date in the future',
         position: 'topRight',
-        color: 'red',
       });
     } else {
       btnStart.disabled = false;
@@ -77,4 +76,4 @@ const option = {
   },
 };
 
-flatpickr('#datetime-picker', option);
+flatpickr(dateInput, option);
