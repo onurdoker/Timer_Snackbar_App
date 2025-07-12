@@ -12,8 +12,8 @@ const dataHours = document.querySelector('[data-hours]');
 const dataMinutes = document.querySelector('[data-minutes]');
 const dataSeconds = document.querySelector('[data-seconds]');
 
-let userSelected;
-let timerId;
+let userSelected = null;
+let timerId = null;
 
 btnStart.disabled = true;
 

@@ -22,7 +22,7 @@ body {
   font-size: 40px;
   font-style: normal;
   line-height: 1.2;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.02em;
 }
 
 #datetime-picker {
@@ -45,8 +45,8 @@ body {
 [data-start] {
   padding: 8px 16px;
   border-radius: 5px;
-  background: cornflowerblue;
-  color: white;
+  background: #6495ed;
+  color: #ffffff;
   font-family: "Arial Narrow", sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -59,6 +59,6 @@ body {
 }
 
 [data-start]:disabled {
-  background: grey;
-  color: crimson;
+  background: #808080;
+  color: #dc143c;
 }
